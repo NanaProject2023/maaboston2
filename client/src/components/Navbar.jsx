@@ -24,6 +24,8 @@ function Navbar() {
         
           <img src={logo} alt="Logo" />
         
+         
+    
       </div>
 
       {/* Right: Search */}
@@ -51,8 +53,8 @@ function Navbar() {
 
 <Link to="/newsboston">
         <button
-          className={activeTab === "news" ? "active" : ""}
-          onClick={() => handleTabClick("news")}
+          className={activeTab === "newsboston" ? "active" : ""}
+          onClick={() => handleTabClick("newsboston")}
         >
           Boston News
         </button>
