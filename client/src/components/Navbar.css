@@ -1,0 +1,111 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 20px;
+  background-color: #dce0e999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* LEFT SIDE (logo + search) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: clamp(28px, 5vw, 40px);
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Search */
+.navbar-search input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-left: -600px;
+
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.navbar-search input:focus {
+  width: 240px;
+}
+
+/* RIGHT SIDE (tabs) */
+.navbar-tabs {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-tabs button {
+  background: none;
+  border: none;
+  color: #c88a73;
+  font-size: 14px;
+  cursor: pointer;
+
+  padding: 6px 18px;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}
+
+.navbar-tabs button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-tabs button.active {
+  background-color: #0b2966;
+  color: white;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-search input {
+    width: 140px;
+  }
+
+  .navbar-tabs {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .navbar-search input {
+    width: 120px;
+  }
+
+  .navbar-tabs button {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}

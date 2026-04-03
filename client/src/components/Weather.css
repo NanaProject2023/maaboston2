@@ -1,0 +1,81 @@
+/* CONTAINER */
+.weather-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+
+  border-radius: 20px;
+  padding: 24px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+.weather-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #c9e6f0;
+}
+
+/* INFO BLOCK */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+/* PARAGRAPHS (apply to all screen sizes) */
+.weather-info p {
+  margin: 0;
+  color: rgba(81, 132, 138, 0.979);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.weather-btn {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: white;
+  color: #0077ff;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.weather-btn:hover {
+  background: #e6f0ff;
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .weather-container {
+    padding: 30px;
+  }
+
+  .weather-title {
+    font-size: 1.8rem;
+  }
+
+  .weather-info {
+    font-size: 1.2rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .weather-container {
+    max-width: 600px;
+  }
+}

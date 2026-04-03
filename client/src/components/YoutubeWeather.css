@@ -1,0 +1,54 @@
+.yt-container {
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.yt-container h2 {
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.yt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.yt-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.yt-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.yt-card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .yt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .yt-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .yt-card iframe {
+    height: 180px;
+  }
+}

@@ -1,0 +1,16 @@
+html, body, #root {
+  height: 100%;
+ margin-top: -10px;
+ margin-left: 0px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  
+}
