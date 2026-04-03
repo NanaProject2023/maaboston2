@@ -22,12 +22,13 @@ function App() {
   <Navbar />
 
       <Routes>
-        <Route path="*" element={<News />} />
+        
         <Route path="/" element={<News />} />
         <Route path="/news" element={<News />} />
         <Route path="/newsboston" element={<NewsBoston />} />
         <Route path="/weather" element={<Weather />} />
         <Route path="/location" element={<Location />} />
+        <Route path="*" element={<News />} />
       </Routes>
 
 
