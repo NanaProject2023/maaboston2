@@ -4,7 +4,6 @@ import NewsCard from "./NewsCard";
 
 function News() {
   const [articles, setArticles] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchNews = async () => {
