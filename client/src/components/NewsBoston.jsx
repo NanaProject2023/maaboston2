@@ -24,7 +24,7 @@ function NewsBoston() {
 
   return (
 <div className="news-container">
-  <h2>Boston News</h2>
+
 
   {news.length > 0 && (
     <div className="news-viewer">
