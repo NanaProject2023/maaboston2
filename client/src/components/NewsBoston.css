@@ -1,0 +1,102 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Viewer layout */
+.news-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Buttons */
+.news-viewer button {
+  font-size: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  transition: 0.2s;
+}
+
+.news-viewer button:hover {
+  background: #444;
+}
+
+/* Card */
+.news-card {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title */
+.news-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Text */
+.news-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Link */
+.news-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* wrapper becomes positioning reference */
+.news-card-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* buttons float on right side */
+.news-buttons {
+  position: absolute;
+  right: -50px;              /* push outside card */
+  top: 50%;
+  transform: translateY(-50%); /* PERFECT vertical center */
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* buttons style */
+.news-buttons button {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  transition: 0.2s;
+}
+
+.news-buttons button:hover {
+  background: #444;
+}
