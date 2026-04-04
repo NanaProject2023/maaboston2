@@ -4,31 +4,76 @@ import NewsCard from "./NewsCard";
 
 function News() {
   const [articles, setArticles] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    fetch(
-        //general news api call
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=a457b0d08f05483e83c68725d811aeb5`
-    )
-      .then((res) => res.json())
-      .then((data) => setArticles(data.articles))
-      .catch((err) => console.error(err));
+    const fetchNews = async () => {
+      try {
+        const response = await fetch(
+          `https://newsdata.io/api/1/latest?apikey=pub_dc2d979120c943198d08dea321008312&q=Boston&country=us&language=en`
+        );
+
+        const data = await response.json();
+        setArticles(data.results || []);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+
+    fetchNews();
   }, []);
 
+
   return (
-    <div>
-    {articles.map((article, index) => (
-  <div key={index} className="news-card">
-    {article.urlToImage && (
-      <img src={article.urlToImage} alt={article.title} />
+
+  <div className="news-container">
+
+    {articles.length > 0 && (
+      <div className="news-viewer">
+
+        <div className="news-card-wrapper">
+          <div className="news-card">
+
+            {articles[currentIndex].image_url && (
+              <img src={articles[currentIndex].image_url} alt="news" />
+            )}
+
+            <h3>{articles[currentIndex].title}</h3>
+            <p>{articles[currentIndex].description}</p>
+
+            <a
+              href={articles[currentIndex].link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Read full article →
+            </a>
+          </div>
+
+          <div className="news-buttons">
+            <button
+              onClick={() =>
+                setCurrentIndex((prev) =>
+                  prev > 0 ? prev - 1 : articles.length - 1
+                )
+              }
+            >
+              ⬆️
+            </button>
+
+            <button
+              onClick={() =>
+                setCurrentIndex((prev) => (prev + 1) % articles.length)
+              }
+            >
+              ⬇️
+            </button>
+          </div>
+
+        </div>
+      </div>
     )}
-
-    <h3>{article.title}</h3>
-    <p>{article.description}</p>
   </div>
-))}
-</div>
-  );
+);
 }
-
 export default News;
