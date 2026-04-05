@@ -14,7 +14,7 @@ import "./Location.css";
 const getQueryByInput = (input) => {
   const value = input.toLowerCase();
 
-  if (value.includes("coffee")) return "cafe";
+  if (value.includes("cafe")) return "cafe";
   if (value.includes("library")) return "library";
   if (value.includes("restaurant")) return "restaurant";
 
@@ -136,7 +136,7 @@ function Location() {
 
               {/* ✅ Results list */}
       <div className="results">
-        <h2>news</h2>
+        
         {places.map((place) => (
           <div key={place.id} className="card">
             <h3>{place.tags?.name || "Unnamed Place"}</h3>

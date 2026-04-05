@@ -35,6 +35,7 @@ function LocalBullets() {
   return (
     <div>
       <div className="science-news-bullets">
+        <h2>Localbuletts</h2>
         <ul>
           {items.map((item, index) => (
             <li key={index}>
