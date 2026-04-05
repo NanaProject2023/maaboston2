@@ -3,5 +3,24 @@
     "gh-pages": "^6.3.0",
     "leaflet": "^1.9.4",
     "react-leaflet": "^5.0.0"
-  }
+  },
+  "name": "maabostonproject2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanaProject2023/maaboston2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NanaProject2023/maaboston2/issues"
+  },
+  "homepage": "https://github.com/NanaProject2023/maaboston2#readme"
 }

@@ -3,6 +3,9 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import "./Location.css";
+import LocalBullets from "./LocalBullets"; 
+
 
 import { useState } from "react";
 import "./Location.css";
@@ -83,6 +86,23 @@ function Location() {
     : [42.3601, -71.0589];
 
   return (
+
+
+
+
+
+<>
+
+<div className="location-wrapper">
+
+<div className="video-background">
+  <video autoPlay loop muted playsInline>
+    <source src={`${import.meta.env.BASE_URL}assets/locationbg.mp4`} type="video/mp4" />
+  </video>
+</div>
+
+
+
     <div className="location-container">
       <h2>Find Cafes, Libraries, and Restaurants </h2>
 
@@ -116,6 +136,7 @@ function Location() {
 
               {/* ✅ Results list */}
       <div className="results">
+        <h2>news</h2>
         {places.map((place) => (
           <div key={place.id} className="card">
             <h3>{place.tags?.name || "Unnamed Place"}</h3>
@@ -124,10 +145,14 @@ function Location() {
       </div>
 
 
-
+        
 
 
     </div>
+    <LocalBullets />
+    </div>
+
+    </>
   );
 }
 

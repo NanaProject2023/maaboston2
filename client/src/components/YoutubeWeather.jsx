@@ -25,8 +25,6 @@ function YoutubeWeather() {
 
   return (
     <div className="yt-container">
-      <h2>Boston Weather Videos</h2>
-
       <div className="yt-grid">
         {videos.map((video) => (
           <div className="yt-card" key={video.id.videoId}>

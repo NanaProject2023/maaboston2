@@ -40,29 +40,29 @@
 .news-content h3 {
   font-size: 20px;
   margin: 0;
-  color: #7797cb;
+  color: #abb6c8;
 }
 
 .news-content p {
   font-size: 15px;
-  color: #7a3111;
+  color: #f1eeec;
   line-height: 1.5;
 }
 h3 {
   font-size: 20px;
   margin: 0;
-  color: #0281f7b9;
+  color: #adceedb9;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding-top: 10px;
 }
 h3:hover {
-  color: #d95537e6;
+  color: #f1eeede6;
   transform: translateY(-3px);
   transition: all 0.2s ease;
 }
 p {
   font-size: 15px;
-  color: #0b28a9f5;
+  color: #f0f0f4f5;
   line-height: 1.5;
   font-family: 'Times New Roman', Times, serif;
 }

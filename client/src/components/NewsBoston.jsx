@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./NewsBoston.css";
+import ScienceNews from "./ScienceNews";
 
 function NewsBoston() {
   const [news, setNews] = useState([]);
@@ -23,6 +24,20 @@ function NewsBoston() {
   }, []);
 
   return (
+<div className="location-wrapper">
+
+<div className="video-background">
+  <video autoPlay muted playsInline>
+    <source src={`${import.meta.env.BASE_URL}assets/newsbg.mp4`} type="video/mp4" />
+  </video>
+</div>
+
+
+
+
+
+
+
 <div className="news-container">
 
 
@@ -71,6 +86,8 @@ function NewsBoston() {
 
     </div>
   )}
+</div>
+<ScienceNews />
 </div>
   );
 }

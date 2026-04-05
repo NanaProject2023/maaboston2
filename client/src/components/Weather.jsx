@@ -1,6 +1,7 @@
 
 import {useState, useEffect} from "react";
 import "./Weather.css";
+import YoutubeWeather from "./YoutubeWeather";
 
 
 
@@ -41,11 +42,23 @@ function Weather() {
   }, []);
 
 return (
+  
+
+<div className="location-wrapper">
+
+<div className="video-background">
+  <video autoPlay loop muted playsInline>
+    <source src={`${import.meta.env.BASE_URL}assets/weatherbg.mp4`} type="video/mp4" />
+  </video>
+</div>
+
+
+
+
+
   <div className="weather-container">
 
-    <button className="weather-btn" onClick={getWeather}>
-      Refresh Weather
-    </button>
+  
 
     {weatherInfo && (
       <div className="weather-info">
@@ -56,6 +69,10 @@ return (
       </div>
     )}
   </div>
+  <YoutubeWeather /> 
+  </div>
+   
+ 
 );
 }
 export default Weather;

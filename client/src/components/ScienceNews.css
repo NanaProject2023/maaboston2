@@ -1,0 +1,49 @@
+.science-news-bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  justify-content: right;
+  margin-right: 40px;
+  margin-top: -720px;
+}
+.science-news-bullets ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 450px;
+  background-color: rgba(65, 67, 75, 0.29);
+
+  
+ 
+  
+  
+}
+.science-news-bullets li {
+  font-size: 16px;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+.science-news-bullets li:hover {
+  color: #2980b9;
+  transform: translateY(-3px);
+  transition: all 0.2s ease;
+}   
+.science-news-bullets a{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(187, 214, 237);
+}
+
+.science-news-bullets a:hover{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(219, 205, 48);
+    transform: scaleY(-3px);
+    transition: all .2s ease-in;
+}
+.science-news-bullets p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(247, 249, 252);
+}
