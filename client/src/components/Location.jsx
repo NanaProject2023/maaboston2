@@ -149,7 +149,7 @@ function Location() {
 
 
     </div>
-    <LocalBullets />
+    
     </div>
 
     </>
