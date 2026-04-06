@@ -5,6 +5,7 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import "./Location.css";
 import LocalBullets from "./LocalBullets"; 
+import WeatherBullets from "./WeatherBullets";
 
 
 import { useState } from "react";
@@ -132,8 +133,9 @@ return (
         })}
       </MapContainer>
 
-
+       <WeatherBullets />
       <LocalBullets />
+     
 
               {/* ✅ Results list */}
       <div className="results">

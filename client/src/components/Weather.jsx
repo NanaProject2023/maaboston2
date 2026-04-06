@@ -2,6 +2,7 @@
 import {useState, useEffect} from "react";
 import "./Weather.css";
 import YoutubeWeather from "./YoutubeWeather";
+import WeatherExtra from "./WeatherExtra";
 
 
 
@@ -69,6 +70,7 @@ return (
       </div>
     )}
   </div>
+  <WeatherExtra />
   <YoutubeWeather /> 
   </div>
    

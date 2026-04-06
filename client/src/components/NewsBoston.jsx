@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./NewsBoston.css";
 import ScienceNews from "./ScienceNews";
+import BusinessBullets from "./BusinessBullets";  
 
 function NewsBoston() {
   const [news, setNews] = useState([]);
@@ -88,6 +89,7 @@ function NewsBoston() {
   )}
 </div>
 <ScienceNews />
+<BusinessBullets />
 </div>
   );
 }

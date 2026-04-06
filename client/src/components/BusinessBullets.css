@@ -1,0 +1,46 @@
+.business-bullets {
+  width: 730px;
+  height: 80px;
+  background: #e54f0932;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  margin-top: -1780px;
+  margin-left: 120px;
+}
+
+.bullet-link {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.bullet-link:hover {
+  text-decoration: underline;
+  color: rgba(240, 240, 155, 0.146);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}

@@ -4,7 +4,8 @@
   align-items: center;
   font-family: Arial, sans-serif;
   margin-left: -1800px;
-  margin-top: -480px;
+  margin-top: -650px;
+
   z-index: 4;
 }
 
@@ -36,6 +37,7 @@
 }
 .rss-card p {
   font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 10px;
   color: rgb(196, 240, 247);
 }
@@ -71,7 +73,7 @@
 
 color: rgba(238, 235, 235, 0.757);
 font-size: 18px;
-font-family: 'Times New Roman', Times, serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: bold;
 
 }

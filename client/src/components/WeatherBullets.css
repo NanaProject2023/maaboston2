@@ -1,0 +1,48 @@
+.weather-bullets {
+  width: 620px;
+  height: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #51629261;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: -820px;
+  margin-top: 90px;
+ 
+ 
+  
+}
+
+.bullet-link {
+  text-decoration: none;
+  color: rgb(232, 235, 239);
+  font-size: 21px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.4;
+}
+
+.bullet-link:hover {
+  text-decoration: underline;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(180, 214, 233, 0.946);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: rgb(236, 5, 5);
+}
