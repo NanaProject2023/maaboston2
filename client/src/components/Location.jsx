@@ -85,13 +85,11 @@ function Location() {
     ? getLatLon(places[0])
     : [42.3601, -71.0589];
 
-  return (
 
-
-
-
+return (
 
 <>
+ 
 
 <div className="location-wrapper">
 
@@ -134,6 +132,9 @@ function Location() {
         })}
       </MapContainer>
 
+
+      <LocalBullets />
+
               {/* ✅ Results list */}
       <div className="results">
         
@@ -149,9 +150,9 @@ function Location() {
 
 
     </div>
-    
+   
     </div>
-
+        
     </>
   );
 }

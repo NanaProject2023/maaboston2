@@ -1,29 +1,30 @@
 import express from "express";
 import cors from "cors";
-import axios from "axios";
-import { parseStringPromise } from "xml2js";
 
 const app = express();
 app.use(cors());
 
+// Test route
+app.get("/", (req, res) => {
+  res.send("Server is alive");
+});
+
+// RSS test route
 app.get("/rss", async (req, res) => {
   try {
-    const url = req.query.url;
+    const response = await fetch("https://feeds.npr.org/1001/rss.xml");
+    const text = await response.text();
 
-    const response = await axios.get(url);
-    const result = await parseStringPromise(response.data);
-
-    const items = result.rss.channel[0].item.map((item) => ({
-      title: item.title[0],
-      link: item.link[0],
-      pubDate: item.pubDate[0],
-      description: item.description[0],
-    }));
-
-    res.json(items);
+    res.set("Content-Type", "application/xml");
+    res.send(text);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch RSS" });
+    console.error("RSS fetch error:", error);
+    res.status(500).send("Error fetching RSS");
   }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+
+// IMPORTANT: this must exist
+app.listen(5000, () => {
+  console.log("Server running on http://localhost:5000");
+});
