@@ -6,6 +6,8 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Dash.css";
+import bg from "/assets/bostonintro.jpg";
+
 
 
 function Dash() {
@@ -13,7 +15,22 @@ function Dash() {
 
   return (
 
-    <div className="wrap-it">
+    <div className="wrap-it"
+    
+    style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+      }}
+    
+    >
+
+
+
+
+
     <div className="dash-container">
       <div className="dash-icon" onClick={() => navigate("/newsboston")}>
         <FontAwesomeIcon icon={faNewspaper} className="icon" />
