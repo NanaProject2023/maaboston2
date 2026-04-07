@@ -3,7 +3,7 @@
   height: 80px;
   background: #e54f0932;
   color: white;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 10px;
   border-radius: 10px;
 
@@ -13,7 +13,7 @@
   overflow: hidden;
 
   margin-top: -1780px;
-  margin-left: 120px;
+  margin-left: 163px;
 }
 
 .bullet-link {

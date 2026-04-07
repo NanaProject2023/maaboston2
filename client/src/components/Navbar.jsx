@@ -21,9 +21,9 @@ function Navbar() {
     <nav className="navbar">
       {/* Left: Logo */}
       <div className="navbar-logo">
-        
+        <Link to="/dash">
           <img src={logo} alt="Logo" />
-        
+        </Link>
          
     
       </div>

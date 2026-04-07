@@ -3,6 +3,7 @@ import "./NewsBoston.css";
 import ScienceNews from "./ScienceNews";
 import BusinessBullets from "./BusinessBullets";  
 
+
 function NewsBoston() {
   const [news, setNews] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,6 +91,7 @@ function NewsBoston() {
 </div>
 <ScienceNews />
 <BusinessBullets />
+
 </div>
   );
 }

@@ -10,6 +10,7 @@ import Weather from "./components/Weather";
 import YoutubeWeather from "./components/YoutubeWeather";
 import Location from "./components/Location";
 import { Routes, Route } from "react-router-dom";
+import Dash from "./components/Dash";
 
 
 
@@ -23,12 +24,13 @@ function App() {
 
       <Routes>
         
-        <Route path="/" element={<News />} />
+        <Route path="/" element={<Dash />} />
         <Route path="/news" element={<News />} />
         <Route path="/newsboston" element={<NewsBoston />} />
         <Route path="/weather" element={<Weather />} />
         <Route path="/location" element={<Location />} />
-        <Route path="*" element={<News />} />
+        <Route path="/dash" element={<Dash />} />
+        <Route path="*" element={<Dash />} />
       </Routes>
 
 
@@ -40,6 +42,8 @@ function App() {
     {/* <YoutubeWeather /> */} 
     {/* <Location /> */} 
     {/* <NewsMa /> */} 
+    {/* <Dash /> */} 
+    
 
 
 

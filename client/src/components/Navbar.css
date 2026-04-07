@@ -26,6 +26,8 @@
   object-fit: contain;
   cursor: pointer;
   transition: 0.2s ease;
+  margin-left: 70px;
+  margin-right: 40px;
 }
 
 .navbar-logo img:hover {
@@ -57,24 +59,26 @@
 .navbar-tabs button {
   background: none;
   border: none;
-  color: #110779;
-  font-size: 14px;
+  color: #ca2702;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
 
   padding: 6px 18px;
-  border-radius: 15px;
   transition: all 0.2s ease;
 }
 
 .navbar-tabs button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(252, 248, 248, 0.605);
+  color: rgb(5, 38, 104);
+  border-radius: 25px;
 }
-
+/*
 .navbar-tabs button.active {
   background-color: #0b2966;
   color: white;
 }
-
+*/
 /* 🔥 Tablet */
 @media (max-width: 768px) {
   .navbar {
