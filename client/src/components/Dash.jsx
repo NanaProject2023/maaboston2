@@ -6,29 +6,19 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Dash.css";
-import bg from "/assets/bostonintro.jpg";
+
+
 
 
 
 function Dash() {
   const navigate = useNavigate();
 
+
+
   return (
 
-    <div className="wrap-it"
-    
-    style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-      }}
-    
-    >
-
-
-
+    <div className="wrap-it">
 
 
     <div className="dash-container">
