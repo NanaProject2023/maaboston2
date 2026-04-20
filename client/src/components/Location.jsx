@@ -118,7 +118,7 @@ return (
 
 
       {/* ✅ Map */}
-      <MapContainer center={center} zoom={13} style={{ height: "400px" }}>
+      <MapContainer center={center} zoom={13} style={{ height: "400px" }} className="mapp">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
         {places.map((place) => {
@@ -137,16 +137,20 @@ return (
       <LocalBullets />
      
 
-              {/* ✅ Results list */}
+             
+      <div className="results-wrapper"> 
+        {/* ✅ Results list */}   
       <div className="results">
         
         {places.map((place) => (
           <div key={place.id} className="card">
             <h3>{place.tags?.name || "Unnamed Place"}</h3>
           </div>
+          
+          
         ))}
       </div>
-
+      </div>
 
         
 

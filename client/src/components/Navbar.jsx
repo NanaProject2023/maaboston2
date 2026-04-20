@@ -32,7 +32,7 @@ function Navbar() {
       <div className="navbar-search">
         <input
           type="text"
-          placeholder="Search Boston..."
+          placeholder="COMING SOON !"
           value={search}
           onChange={handleSearch}
         />
