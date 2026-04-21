@@ -1,4 +1,6 @@
-Boston Mini Dashboard
+
+
+
 Welcome to the Boston Mini Dashboard! This is a lightweight, interactive dashboard focused on providing real-time insights and searches for Boston residents and visitors. While currently simple, the dashboard is designed to scale in the future, potentially integrating high-end real estate and more.
 Features
 	•	Boston News: Stay up-to-date with the latest news from Boston via integrated APIs.
