@@ -5,8 +5,8 @@ function ScienceNews() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const rssURL = 'https://corsproxy.io/?https://feeds.npr.org/1001/rss.xml';
-    fetch(rssURL)
+    //const rssURL = "i removed this link to businessbullets.js";
+    fetch(`/api/sciencenews`)
       .then(response => response.text())
       .then(str => {
         const parser = new DOMParser();
