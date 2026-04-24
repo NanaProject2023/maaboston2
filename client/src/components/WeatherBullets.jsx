@@ -9,7 +9,7 @@ function WeatherBullets() {
     const fetchRSS = async () => {
       try {
         const response = await fetch(
-          "https://corsproxy.io/?https://artsboston.org/feed/"
+          `/api/weather2`
         );
         const text = await response.text();
 
