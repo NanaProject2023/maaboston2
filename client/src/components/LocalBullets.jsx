@@ -75,7 +75,7 @@ function LocalBullets() {
     const fetchRSS = async () => {
       try {
         const response = await fetch(
-          "https://corsproxy.io/?https://www.boston.com/tag/events/feed/"
+          `/api/localbullets`
         );
         const text = await response.text();
 
