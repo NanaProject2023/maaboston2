@@ -9,8 +9,10 @@ function WeatherExtra() {
     const fetchWeather = async () => {
       try {
         const response = await fetch(
-          "https://corsproxy.io/?https://forecast.weather.gov/xml/current_obs/KBOS.rss"
+         '/api/weather'
         );
+
+        
 
         console.log("STATUS:", response.status);
 
