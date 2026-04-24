@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const response = await fetch();
+    const response = await fetch("https://techcrunch.com/feed/");
     const data = await response.text();
 
     res.setHeader("Access-Control-Allow-Origin", "*");

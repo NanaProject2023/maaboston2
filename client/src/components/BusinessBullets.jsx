@@ -9,7 +9,7 @@ function BusinessBullets() {
     const fetchRSS = async () => {
       try {
         const response = await fetch(
-          "https://corsproxy.io/?https://techcrunch.com/feed/"
+          `/api/businessbullets`
         );
 
         console.log("STATUS:", response.status);
